@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #00fff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+    overflow: hidden;
+  }
+  
+  .clock-container h1 {
+    font-size: 6rem;
+    text-shadow:
+      0 0 10px #00fff7,
+      0 0 20px #00fff7,
+      0 0 30px #ff00cc,
+      0 0 40px #ff00cc;
+    animation: pulse 2s infinite;
+  }
+  
+  /* Optional neon pulse effect */
+  /* @keyframes pulse {
+    0% {
+      text-shadow:
+        0 0 10px #00fff7,
+        0 0 20px #00fff7,
+        0 0 30px #ff00cc,
+        0 0 40px #ff00cc;
+    }
+    50% {
+      text-shadow:
+        0 0 20px #00fff7,
+        0 0 30px #00fff7,
+        0 0 40px #ff00cc,
+        0 0 60px #ff00cc;
+    }
+    100% {
+      text-shadow:
+        0 0 10px #00fff7,
+        0 0 20px #00fff7,
+        0 0 30px #ff00cc,
+        0 0 40px #ff00cc;
+    }
+  }
+   */
