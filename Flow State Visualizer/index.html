@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flow State Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Flow State Visualizer</h1>
+
+    <div class="sliders">
+      <label>Challenge Level
+        <input type="range" id="challenge" min="0" max="10" step="0.1" />
+      </label>
+
+      <label>Ability Level
+        <input type="range" id="ability" min="0" max="10" step="0.1" />
+      </label>
+    </div>
+
+    <div class="state-box">
+      <p id="state">Flow</p>
+    </div>
+
+    <div class="bars">
+      <div class="bar">
+        <div class="fill" id="anxietyFill"></div>
+        <span>Anxiety</span>
+      </div>
+      <div class="bar">
+        <div class="fill" id="boredomFill"></div>
+        <span>Boredom</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

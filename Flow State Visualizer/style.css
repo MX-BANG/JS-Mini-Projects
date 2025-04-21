@@ -1,0 +1,101 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #fdf6e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background: #fff8dc;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #4b3832;
+  }
+  
+  .sliders label {
+    display: block;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    appearance: none;
+    height: 6px;
+    border-radius: 5px;
+    background: #ccc;
+    outline: none;
+    transition: background 0.3s;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4b3832;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .state-box {
+    margin-top: 20px;
+    padding: 10px;
+    background: #eee;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  
+  .bars {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .bar {
+    width: 50px;
+    height: 150px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .bar span {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  .fill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background:rgb(202, 18, 2);
+    height: 0;
+    transition: height 0.5s ease;
+  }
+  
+  #boredomFill {
+    background: #6fa8dc;
+  }
+  
+  #state {
+    font-size: 2rem;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+
+  
