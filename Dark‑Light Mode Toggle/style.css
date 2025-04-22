@@ -1,0 +1,75 @@
+:root{
+    --bg:#fdfdfd;
+    --fg:#222;
+    --accent:#ffc400;          /* sun */
+    --accent-alt:#00c8ff;      /* moon */
+  }
+  
+  body{
+    background:var(--bg);
+    color:var(--fg);
+    font-family:"Segoe UI",sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    transition:.4s;
+  }
+  
+  h1{margin:1.5rem 0 .5rem}
+  
+  button#themeToggle{
+    position:relative;
+    width:90px;
+    height:46px;
+    border:none;
+    background:#ddd;
+    border-radius:30px;
+    cursor:pointer;
+    padding:0;
+    outline:none;
+    display:flex;
+    align-items:center;
+    transition:background .4s;
+  }
+  
+  .icon{
+    position:absolute;
+    font-size:22px;
+    top:50%;
+    transform:translateY(-50%);
+    pointer-events:none;
+    transition:opacity .4s;
+  }
+  .sun{left:9px;color:var(--accent);opacity:4s;}
+  .moon{right:8px;color:var(--accent-alt);opacity:4s;}
+  
+  .toggle-thumb{
+    position:absolute;
+    left:4px;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 2px 6px rgba(0,0,0,.25);
+    transition:transform .4s, background .4s;
+  }
+  
+  /* Dark mode body */
+  body.dark{
+    --bg:#1c1c1e;
+    --fg:#e4e4e4;
+  }
+  
+  /* Dark‑mode button visuals */
+  body.dark #themeToggle{
+    background:#444;
+  }
+  body.dark .sun{opacity:1;}
+  body.dark .moon{opacity:1;}
+  body.dark .toggle-thumb{
+    transform:translateX(44px);
+    background:#272727;
+  }
+  
