@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e60000; /* Red color for the title */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+main {
+    background-color: #222; /* Dark grey box */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 800px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.answer-btn {
+    background-color: #e60000; /* Red color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded buttons */
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+.answer-btn:hover {
+    background-color: #ff3333; /* Slightly lighter red */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.answer-btn:active {
+    transform: scale(0.98); /* Slight scale-down effect when button is clicked */
+}
+
+button:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .answer-btn {
+        font-size: 1rem;
+        width: 120px;
+    }
+}
